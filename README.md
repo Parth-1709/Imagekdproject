@@ -101,5 +101,5 @@ Knowledge Distillation: Hinton et al., 2015 — https://arxiv.org/abs/1503.02531
 👨‍🎓 Author
 Parth Prakash
 📧 parth.prakash017@gmail.com 
-🔗 GitHub Profile
+🔗 GitHub Profile -> https://github.com/Parth-1709
 
