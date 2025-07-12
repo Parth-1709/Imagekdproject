@@ -90,28 +90,27 @@ imagesharpening/
 ```bash
 git clone https://github.com/your-username/imagesharpening.git
 cd imagesharpening
+```
 
 🧪 Create & Activate Virtual Environment
-Copy
-Edit
+```bash
 python -m venv venv
 source venv/bin/activate       # Windows: venv\Scripts\activate
+```
 
 📚 Install Dependencies
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-
+```
 Or install manually:
-Copy
-Edit
+```bash
 pip install torch torchvision opencv-python numpy matplotlib
+```
 
 📥 Download the Teacher Model (Restormer)
-bash
-Copy
-Edit
+```bash
 git clone https://github.com/swz30/Restormer.git
+
 ```
 ---
 
