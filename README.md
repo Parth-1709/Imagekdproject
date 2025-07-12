@@ -13,7 +13,7 @@ To enhance blurry images using a lightweight CNN model trained via knowledge dis
 
 ## 🧠 Knowledge Distillation Framework
 
-- **Teacher Model**: [Restormer](https://arxiv.org/abs/2111.09881) — pretrained, transformer-based model for image deblurring.
+- **Teacher Model**: [Restormer](https://github.com/swz30/Restormer) — pretrained, transformer-based model for image deblurring.
 - **Student Model**: Custom-built 3-layer CNN trained on outputs (soft labels) from the teacher.
 
 The student model achieves comparable sharpening results at **~387 FPS**, making it suitable for real-time use cases.
@@ -74,21 +74,45 @@ imagesharpening/
 > 🔍 **Interpretation**: Teacher model may underperform slightly in PSNR due to higher sharpening aggressiveness, especially on images with strong Gaussian blur. Student preserves balance between speed and perceptual quality.
 
 
-## 🧑‍💻 Setup Instructions
+## 🚀 Setup Instructions
 
-### ✅ Clone the repo
+### ✅ Prerequisites
 
--git clone https://github.com/Parth-1709/Imagekdproject.git
-cd Imagekdproject
+- Python 3.8+
+- pip
+- Git
+- (Optional) CUDA-compatible GPU for training
 
 ---
 
- Install requirements
-bash
+### 📦 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/imagesharpening.git
+cd imagesharpening
+
+🧪 Create & Activate Virtual Environment
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate       # Windows: venv\Scripts\activate
+
+📚 Install Dependencies
 Copy
 Edit
 pip install -r requirements.txt
 
+Or install manually:
+Copy
+Edit
+pip install torch torchvision opencv-python numpy matplotlib
+
+📥 Download the Teacher Model (Restormer)
+bash
+Copy
+Edit
+git clone https://github.com/swz30/Restormer.git
+```
 ---
 
 📄 References
