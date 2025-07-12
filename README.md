@@ -36,19 +36,7 @@ The student model achieves comparable sharpening results at **~387 FPS**, making
 ---
 
 ## 🏗️ Project Structure
-imagesharpening/
-├── checkpoints/ # Saved student model
-├── src/
-│ ├── dataset.py
-│ ├── train_student.py
-│ ├── test_single_image.py
-│ └── metrics/
-│ ├── psnr_test.py
-│ ├── ssim_test.py
-│ └── inference_time.py
-├── SampleData/ # Sample blurred, sharp, and output images
-├── Restormer/ # External teacher model repo (ignored in .git)
-└── Image Sharpening Report.docx
+<pre> ``` imagesharpening/ ├── checkpoints/ # Saved student model ├── src/ │ ├── dataset.py # Dataset loader │ ├── train_student.py # Student training script │ ├── test_single_image.py # Inference on single image │ └── metrics/ # Evaluation metrics │ ├── psnr_test.py │ ├── ssim_test.py │ └── inference_time.py ├── SampleData/ # Sample blurred, sharp, and output images ├── Restormer/ # Teacher model repo (ignored in git) ├── Image Sharpening Report.docx ``` </pre>
 
 
 ---
